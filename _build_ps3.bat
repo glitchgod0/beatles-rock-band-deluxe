@@ -17,7 +17,7 @@ echo:Moving back Xbox files
 @%SystemRoot%\System32\robocopy.exe "%~dp0_temp\_ark" "%~dp0_ark" *.bmp_xbox /S /MOVE /XD "%~dp0_ark" /NDL /NFL /NJH /NJS /R:0 >nul
 rd _temp
 echo:
-if %FAILED_ARK_BUILD% neq 1 (echo:Successfully built Rock Band 2 Deluxe ARK. You may find the files needed to place on your PS3 in /_build/PS3/)
+if %FAILED_ARK_BUILD% neq 1 (echo:Successfully built Beatles Rock Band Deluxe ARK. You may find the files needed to place on your PS3 in /_build/PS3/)
 if %FAILED_ARK_BUILD% neq 0 (echo:Error building ARK. Check your modifications or run _git_reset.bat to rebase your repo.)
 echo:
 pause
