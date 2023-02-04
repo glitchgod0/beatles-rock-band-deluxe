@@ -11,3 +11,7 @@ _build/xbox/gen/main_xbox_7.ark
 _build/xbox/gen/main_xbox_8.ark
 _build/xbox/gen/main_xbox_9.ark
 _xenia/cache
+_build/xbox/gen/patch_xbox.hdr
+_build/xbox/gen/patch_xbox_0.ark
+_xenia/xenia.log
+_xenia/xenia.log
