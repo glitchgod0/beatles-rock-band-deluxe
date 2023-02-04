@@ -9,7 +9,9 @@ This Repo contains everything you need to build an ark for Beatles Rock Band Del
 ## Features
 
 ### Quality of Life
+* No No strum limit executable modification (360 only)
 * Fast start executable modification (360 only)
+* Additional intro skip scripting to skip the intro movie
 * Manual calibration adjusts by 1ms instad of 5ms
 
 ## Install
