@@ -9,7 +9,7 @@ This Repo contains everything you need to build an ark for Beatles Rock Band Del
 ## Features
 
 ### Quality of Life
-* Fast start executable modification
+* Fast start executable modification (360 only)
 * Manual calibration adjusts by 1ms instad of 5ms
 
 ## Install
