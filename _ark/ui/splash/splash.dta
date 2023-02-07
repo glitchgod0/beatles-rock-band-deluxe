@@ -41,6 +41,7 @@
    (enter_time 0.0)
    (attract_timeout_done FALSE)
    (enter
+      {logo_beatles.tex set_bitmap "ui/background/beatles_dx_big.png"}
       #ifdef HX_PS3
       {register_trophy}
       #endif
