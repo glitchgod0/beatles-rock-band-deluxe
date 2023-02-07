@@ -43,6 +43,7 @@
    (enter
       {$this iterate UILabel $l {$l set_showing FALSE}}
       {logo_beatles.tex set_bitmap "ui/background/beatles_dx_big.png"}
+      {logo_beatles.mesh set_local_pos_index 2 -20}
       #ifdef HX_PS3
       {register_trophy}
       #endif
