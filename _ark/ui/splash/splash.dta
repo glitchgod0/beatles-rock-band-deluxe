@@ -10,6 +10,7 @@
       {ui goto_screen splash_screen})
    (enter
       {platform_mgr disable_xmp}
+      {ui goto_screen splash_screen}
       kDataUnhandled)
    (exit
       #ifdef HX_PS3
