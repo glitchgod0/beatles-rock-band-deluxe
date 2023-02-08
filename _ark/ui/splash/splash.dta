@@ -41,6 +41,17 @@
    (enter_time 0.0)
    (attract_timeout_done FALSE)
    (enter
+      ;{$this iterate Mat $m {$m set use_environ TRUE}} ;allow the materials to be affected by the environment color
+      ;{$this iterate Mat $m {$m set color_adjust TRUE}} ;allow the materials to be affected by the environment color
+      ;{$this iterate Mat $m {$m set color {pack_color 1 0 0}}} ;allow the materials to be affected by the environment color
+      ;{$this iterate Environ $l {$l set color {pack_color 1 0 0}}} ;actually applying the hue shift after we run the math in the below script task
+      ;{$this iterate UIColor $l {$l set color {pack_color 1 0 0}}} ;actually applying the hue shift after we run the math in the below script task
+      ;{$this iterate ParticleSys $l {$l set max_parts 10000}} ;actually applying the hue shift after we run the math in the below script task
+      ;{$this iterate ParticleSys $l {$l set spin FALSE}} ;actually applying the hue shift after we run the math in the below script task
+      ;{$this iterate PostProc $l {$l set color {pack_color 1 0 0}}} ;actually applying the hue shift after we run the math in the below script task
+      ;{$this iterate Light $l {$l set color {pack_color 1 0 0}}} ;actually applying the hue shift after we run the math in the below script task
+      {watercolor.mesh set_showing FALSE}
+      {watercolor01.mesh set_showing FALSE}
       {$this iterate UILabel $l {$l set_showing FALSE}}
       {logo_beatles.tex set_bitmap "ui/background/beatles_dx_big.png"}
       {logo_beatles.mesh set_local_pos_index 2 -20}

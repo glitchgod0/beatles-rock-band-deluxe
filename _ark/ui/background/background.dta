@@ -141,6 +141,12 @@
       }
    )
    (enter
+      {watercolor.mesh set_showing FALSE}
+      {watercolor_matchmaking.mesh set_showing FALSE}
+      {watercolor_story_hub.mesh set_showing FALSE}
+      {watercolordifficulty01.mesh set_showing FALSE}
+      {watercolorsongselect.mesh set_showing FALSE}
+      ;{$this iterate ParticleSys $l {$l set max_parts 10}}
       {$this iterate Mat $m {$m set use_environ TRUE}} ;allow the materials to be affected by the environment color
       {$this iterate Mat $m {$m set color_adjust TRUE}} ;allow the materials to be affected by the environment color
       {set $hueaddition {random_int 0 2}} ;randomly decide whether to add or subtract in the hue_shift task
