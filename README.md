@@ -1,6 +1,6 @@
 # Beatles-Rock-Band-Deluxe
 
-![Header Image](dependencies/header.png)
+![Header Image](dependencies/art/beatles_dx_big.png)
 
 ## Introduction
 
