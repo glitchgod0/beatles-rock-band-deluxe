@@ -8,7 +8,7 @@ echo:Temporarily moving Xbox files out of the ark path to reduce final ARK size
 @%SystemRoot%\System32\robocopy.exe "%~dp0_ark" "%~dp0_temp\_ark" *.bmp_xbox /S /MOVE /XD "%~dp0_temp\_ark" /NDL /NFL /NJH /NJS /R:0 >nul
 echo:
 echo:Building PS3 ARK
-"%~dp0dependencies/arkhelper" dir2ark "%~dp0_ark" "%~dp0_build\ps3\USRDIR\gen" -n "patch_ps3" -e -v 5 >nul
+"%~dp0dependencies/arkhelper" dir2ark "%~dp0_ark" "%~dp0_build\ps3\USRDIR\gen" -n "patch_ps3" -e -v 5 -s 4073741823 >nul
 if %errorlevel% neq 0 (set FAILED_ARK_BUILD=1)
 echo:
 echo:Moving back Xbox files
