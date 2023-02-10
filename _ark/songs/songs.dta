@@ -1,3 +1,4 @@
+#include songs_customs.dta
 #ifndef MINIMAL_SONGS
 #ifdef DEBUG_SONGS
 #include songs_debug.dta
