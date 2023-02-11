@@ -18,6 +18,9 @@ This Repo contains everything you need to build an ark for Beatles Rock Band Del
 * Selectable venue framerate up to 60fps
 * Manual calibration adjusts by 1ms instad of 5ms
 
+### Additional Modifications
+* Hue-shifting menu
+
 ## Install
 
 NOTE: You WILL need a modded/hacked console to play this mod on console. I hope this is clear
