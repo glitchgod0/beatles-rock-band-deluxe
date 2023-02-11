@@ -9,7 +9,6 @@
 (os_dxsettings "DELUXE SETTINGS")
 (os_spd "Speed Modifiers")
 (os_vis "Visual Modifiers")
-(os_vis "Visual Modifiers")
 (os_blackbg1 "Disable Venues: ON")
 (os_songtitle1 "Song Title Always: ON")
 (os_blackbg0 "Disable Venues: OFF")
