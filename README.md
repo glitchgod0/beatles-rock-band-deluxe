@@ -21,7 +21,6 @@ This Repo contains everything you need to build an ark for Beatles Rock Band Del
 ### Additional Modifications
 * Hue-shifting menu
 * Nice (69%) and Fab Choke (98-99%) callouts on solo completion
-* New main menu music pulled from other Rock Band titles
 
 ## Install
 
