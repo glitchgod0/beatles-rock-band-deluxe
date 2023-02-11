@@ -53,6 +53,12 @@
          set_showing
          TRUE}
       {meta_performer disband_if_bad_configuration}
+	  {set $guitar_milosong FALSE} {set $bass_milosong FALSE} {set $drum_milosong FALSE}
+      {set $bass_groove_active FALSE} {set $bass_firstnote FALSE} {set $guitar_firstnote FALSE} {set $drum_firstnote FALSE}
+	  {set $drum_groove_active FALSE}
+	  {set $guitar_groove_active FALSE}
+	 {world_panel set_showing {! $blackbg}}
+     {if $blackbg {$world iterate PostProc $p {$p set emulate_fps 1}}}
       {script_task
          kTaskSeconds
          (delay
@@ -71,12 +77,23 @@
             {handle
                ($this intro_end)})}
       kDataUnhandled)
+   (on_extend {world_panel set_showing {! $blackbg}} kDataUnhandled)
    (intro_skip
+      {set $guitar_milosong FALSE} {set $bass_milosong FALSE} {set $drum_milosong FALSE}
+      {set $bass_groove_active FALSE} {set $bass_firstnote FALSE} {set $guitar_firstnote FALSE} {set $drum_firstnote FALSE}
+	  {set $drum_groove_active FALSE}
+	  {set $guitar_groove_active FALSE}
+     {world_panel set_showing {! $blackbg}}
+     {if $blackbg {$world iterate PostProc $p {$p set emulate_fps 1}}}
       {{gamemode get game_screen}
          set_showing
          TRUE}
       kDataUnhandled)
    (music_start
+      {set $guitar_milosong FALSE} {set $bass_milosong FALSE} {set $drum_milosong FALSE}
+      {set $bass_groove_active FALSE} {set $bass_firstnote FALSE} {set $guitar_firstnote FALSE} {set $drum_firstnote FALSE}
+	  {set $drum_groove_active FALSE}
+	  {set $guitar_groove_active FALSE}
       {ui music_start}
       kDataUnhandled)
    (beat
@@ -98,6 +115,10 @@
                      {elem $levels $ex})}}}}
       kDataUnhandled)
    (game_over
+      {set $guitar_milosong FALSE} {set $bass_milosong FALSE} {set $drum_milosong FALSE}
+      {set $bass_groove_active FALSE} {set $bass_firstnote FALSE} {set $guitar_firstnote FALSE} {set $drum_firstnote FALSE}
+	  {set $drum_groove_active FALSE}
+	  {set $guitar_groove_active FALSE}
       {stagekit_reset}
       {beatmatch
          foreach_active_player
@@ -152,6 +173,10 @@
                {beatmatch set_paused TRUE}})}
       kDataUnhandled)
    (game_outro
+      {set $guitar_milosong FALSE} {set $bass_milosong FALSE} {set $drum_milosong FALSE}
+      {set $bass_groove_active FALSE} {set $bass_firstnote FALSE} {set $guitar_firstnote FALSE} {set $drum_firstnote FALSE}
+	  {set $drum_groove_active FALSE}
+	  {set $guitar_groove_active FALSE}
       {beatmatch
          foreach_active_player
          $p
@@ -223,6 +248,10 @@
          FALSE})
    PAUSE_ON_MIC_DISCONNECT
 (milo_setup
+;set up the FC indicator here
+      {set $guitar_milosong FALSE} {set $bass_milosong FALSE} {set $drum_milosong FALSE}
+	  {set $bass_firstnote FALSE} {set $guitar_firstnote FALSE} {set $drum_firstnote FALSE}
+	  {set $drum_groove_active FALSE} {set $guitar_groove_active FALSE} {set $bass_groove_active FALSE}
 ;setup for venue fps
 	  {if {!= $emulatefps 24} {{$world iterate PostProc $p {$p set emulate_fps $emulatefps}}}
 	  {if {>= {$emulatefps 25} {$char iterate CharHair $hair {$hair reset 35}}
@@ -265,6 +294,9 @@
          [mic_removed_mid_setlist]
          {$this pause_for_mic}})
    (exit
+      {set $guitar_milosong FALSE} {set $bass_milosong FALSE} {set $drum_milosong FALSE}
+      {set $bass_groove_active FALSE} {set $drum_groove_active FALSE} {set $guitar_groove_active FALSE}
+      {set $bass_firstnote FALSE} {set $guitar_firstnote FALSE} {set $drum_firstnote FALSE}
       {platform_mgr remove_sink $this ui_changed}
       {platform_mgr remove_sink $this microphones_changed}
       {synth stop_playback_all_mics}

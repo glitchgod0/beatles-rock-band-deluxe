@@ -52,7 +52,13 @@
 
 ;set default venue fps.
 {set $emulatefps 30}
-;
+
+;no venues
+{set $blackbg FALSE}
+
+;song title always on
+{set $songtitle FALSE}
+
 {platform_mgr set_notify_ui_location kOSNotifyBottomCenter}
 {set $saveload_skip_upload FALSE}
 #endif
