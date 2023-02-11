@@ -12,6 +12,7 @@ This Repo contains everything you need to build an ark for Beatles Rock Band Del
 * No strum limit executable modification
 * Fast start executable modification
 * Additional intro skip scripting to skip the intro movie
+* "Overshell" - a custom on-screen menu system for changing modifiers, speeds, textures, and more. Opened by pressing `SELECT, SELECT` on most menu screens.
 * Bass streak effect from RB3/RB4 available on all instruments
 * Selectable song speed and track speed by 5% increments
 * Selectable venue framerate up to 60fps
