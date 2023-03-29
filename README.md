@@ -1,6 +1,6 @@
 # Beatles-Rock-Band-Deluxe
 
-![Header Image](dependencies/header.png)
+![Header Image](dependencies/art/beatles_dx_big.png)
 
 ## Introduction
 
@@ -9,10 +9,18 @@ This Repo contains everything you need to build an ark for Beatles Rock Band Del
 ## Features
 
 ### Quality of Life
-* No No strum limit executable modification (360 only)
-* Fast start executable modification (360 only)
+* No strum limit executable modification
+* Fast start executable modification
 * Additional intro skip scripting to skip the intro movie
+* "Overshell" - a custom on-screen menu system for changing speeds. Opened by pressing `SELECT, SELECT` on most menu screens
+* Bass streak effect from RB3/RB4 available on all instruments
+* Selectable song speed and track speed by 5% increments
+* Selectable venue framerate up to 60fps
 * Manual calibration adjusts by 1ms instad of 5ms
+
+### Additional Modifications
+* Hue-shifting menu
+* Nice (69%) and Fab Choke (98-99%) callouts on solo completion
 
 ## Install
 
